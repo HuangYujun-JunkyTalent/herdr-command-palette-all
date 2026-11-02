@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2026 Yujun Huang
+# SPDX-License-Identifier: MIT
+
+id = "command-palette"
+name = "Command palette"
+version = "0.1.0"
+min_herdr_version = "0.9.5"
+description = "Fuzzy-search every Herdr command, plugin action, custom command and jump, with its key, and run it."
+platforms = ["linux", "macos"]
+
+# Herdr binds no key for a plugin.
+# README.md shows the binding for config.toml.
+[[actions]]
+id = "open"
+title = "Command palette"
+description = "Open the command palette over the active pane."
+command = ["python3", "palette.py", "--open"]
+
+[[panes]]
+id = "palette"
+title = "Command palette"
+placement = "popup"
+width = "70%"
+height = "60%"
+command = ["python3", "palette.py"]
