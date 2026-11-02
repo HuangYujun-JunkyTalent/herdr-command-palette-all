@@ -32,7 +32,7 @@ The keys come from the defaults of your Herdr version and from your `~/.config/h
 ## Install
 
 ```sh
-herdr plugin install HuangYujun-JunkyTalent/herdr-command-palette
+herdr plugin install HuangYujun-JunkyTalent/herdr-command-palette-all
 ```
 
 Herdr binds no key for a plugin, so add one to `~/.config/herdr/config.toml`:
